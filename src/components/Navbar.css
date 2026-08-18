@@ -170,6 +170,26 @@
   pointer-events: auto;
 }
 
+.navbar__mobile-close {
+  position: absolute;
+  top: 1.5rem;
+  right: clamp(1rem, 4vw, 1.5rem);
+  background: none;
+  border: none;
+  color: var(--text);
+  cursor: pointer;
+  padding: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.navbar__mobile-close:hover {
+  opacity: 0.7;
+  transform: scale(1.1);
+}
+
 .navbar__mobile ul {
   list-style: none;
   display: flex;
