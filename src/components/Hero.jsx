@@ -212,7 +212,7 @@ export default function Hero() {
         {/* ── RIGHT: Profile Image ── */}
         <div className="hero__image-col">
           <div className="hero__image-wrapper">
-            <img src="/portfolio_image.png" alt="Mohamed Imran H" className="hero__image" />
+            <img src="/portfolio_image.webp" alt="Mohamed Imran H" className="hero__image" fetchPriority="high" />
           </div>
         </div>
 
