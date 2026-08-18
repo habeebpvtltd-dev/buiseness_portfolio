@@ -1,0 +1,111 @@
+/* ── Education Section ── */
+.education {
+  background: var(--bg-surface);
+}
+
+.edu__layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: clamp(1.5rem, 4vw, 2.5rem);
+  align-items: start;
+}
+
+/* ── Timeline ── */
+.edu__timeline {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+/* ── Edu Card ── */
+.edu__card {
+  position: relative;
+  overflow: hidden;
+}
+
+.edu__card-period {
+  font-size: 0.68rem;
+  margin-bottom: 0.75rem;
+  display: inline-flex;
+}
+
+.edu__degree {
+  font-family: var(--font-display);
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--text);
+  line-height: 1.35;
+  margin-bottom: 0.5rem;
+  letter-spacing: -0.02em;
+}
+
+.edu__institution {
+  font-size: 0.83rem;
+  color: var(--text-muted);
+  line-height: 1.6;
+}
+
+.edu__icon {
+  position: absolute;
+  bottom: 1.25rem;
+  right: 1.5rem;
+  color: rgba(124, 58, 237, 0.18);
+}
+
+/* ── Achievements ── */
+.edu__achievements {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: clamp(1.25rem, 4vw, 2rem);
+}
+
+.edu__ach-title {
+  font-family: var(--font-display);
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--text);
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  margin-bottom: 1.5rem;
+}
+
+.edu__ach-title svg { color: var(--amber); }
+
+.edu__ach-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.9rem;
+  list-style: none;
+}
+
+.edu__ach-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+  font-size: 0.875rem;
+  color: var(--text-muted);
+  line-height: 1.7;
+}
+
+.edu__ach-bullet {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--violet), var(--lime));
+  flex-shrink: 0;
+  margin-top: 0.55rem;
+  box-shadow: 0 0 8px var(--glow-violet);
+}
+
+/* ── Responsive ── */
+/* Collapse to single column on tablet portrait */
+@media (max-width: 900px) {
+  .edu__layout { grid-template-columns: 1fr; }
+}
+
+@media (max-width: 480px) {
+  .edu__ach-item { font-size: 0.82rem; }
+  .edu__degree { font-size: 0.95rem; }
+}

@@ -1,0 +1,128 @@
+/* ── Experience Section ── */
+.experience {
+  position: relative;
+}
+
+/* ── Timeline ── */
+.exp__timeline {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+/* ── Item ── */
+.exp__item {
+  display: grid;
+  grid-template-columns: 60px 1fr;
+  gap: 1.5rem;
+  align-items: flex-start;
+}
+
+/* ── Node ── */
+.exp__node {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.exp__node-icon {
+  width: 52px;
+  height: 52px;
+  background: var(--bg-card);
+  border: 1px solid var(--border-mid);
+  border-radius: var(--radius);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--violet-mid);
+  position: relative;
+  z-index: 2;
+  flex-shrink: 0;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.exp__item:hover .exp__node-icon {
+  border-color: rgba(124, 58, 237, 0.5);
+  box-shadow: 0 0 20px var(--glow-violet);
+  color: var(--violet-light);
+}
+
+.exp__node-line {
+  width: 1px;
+  flex: 1;
+  min-height: 2rem;
+  background: linear-gradient(180deg, rgba(124, 58, 237, 0.4), rgba(124, 58, 237, 0.05));
+  margin-top: 0;
+}
+
+.exp__item:last-child .exp__node-line {
+  display: none;
+}
+
+/* ── Card ── */
+.exp__card {
+  margin-bottom: clamp(1rem, 3vw, 1.5rem);
+  position: relative;
+  overflow: hidden;
+}
+
+.exp__card-top {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 0.75rem;
+}
+
+.exp__index {
+  font-size: 0.65rem;
+  padding: 0.2rem 0.55rem;
+}
+
+.exp__tech {
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  font-weight: 500;
+  color: var(--violet-mid);
+  letter-spacing: 0.05em;
+}
+
+.exp__title {
+  font-family: var(--font-display);
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--text);
+  margin-bottom: 0.65rem;
+  letter-spacing: -0.02em;
+}
+
+.exp__desc {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  line-height: 1.75;
+}
+
+/* ── Corner accent ── */
+.exp__card-corner {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 60px;
+  height: 60px;
+  background: linear-gradient(225deg, rgba(124,58,237,0.12), transparent);
+  border-top-left-radius: var(--radius-lg);
+}
+
+/* ── Responsive ── */
+@media (max-width: 768px) {
+  .exp__item { grid-template-columns: 44px 1fr; gap: 1rem; }
+  .exp__node-icon { width: 42px; height: 42px; }
+}
+
+@media (max-width: 400px) {
+  /* Give text as much space as possible on tiny phones */
+  .exp__item { grid-template-columns: 36px 1fr; gap: 0.75rem; }
+  .exp__node-icon { width: 34px; height: 34px; font-size: 0.9rem; }
+  .exp__title { font-size: 1rem; }
+  .exp__desc { font-size: 0.85rem; }
+}
