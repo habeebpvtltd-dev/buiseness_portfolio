@@ -1,16 +1,49 @@
-# React + Vite
+# Mohamed Imran H - Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+A cinematic, modern portfolio website showcasing my work as an AI/ML Engineer and Full-Stack Developer. Built with React, Vite, and Vanilla CSS, featuring a sleek dark theme with vibrant accents.
 
-Currently, two official plugins are available:
+## 🌟 Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- **Modern Cinematic UI**: Premium dark mode design with glassmorphism, glowing accents, and dynamic particle effects.
+- **Smooth Scrolling**: Momentum-based smooth scrolling powered by [Lenis](https://lenis.darkroom.engineering/).
+- **Fully Responsive**: Carefully crafted layouts that look great on desktops, tablets, and mobile devices.
+- **Dynamic Interactions**: Custom cursor, scroll progress bar, and hover effects.
+- **Contact Form**: Fully functional serverless contact form integrated with EmailJS.
 
-## React Compiler
+## 🛠️ Tech Stack
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- **Framework**: React 19 + Vite
+- **Styling**: Vanilla CSS (CSS Variables, Flexbox, CSS Grid)
+- **Animation**: CSS Keyframes & Transitions, Lenis (Smooth Scroll)
 
-## Expanding the Oxlint configuration
+## 🚀 Getting Started
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+First, clone the repository and install the dependencies:
+
+```bash
+git clone https://github.com/habeebpvtltd-dev/buiseness_portfolio.git
+cd buiseness_portfolio
+npm install
+```
+
+Next, run the development server:
+
+```bash
+npm run dev
+```
+
+Open [http://localhost:5173](http://localhost:5173) with your browser to see the result.
+
+## 🔑 Environment Variables
+
+To make the contact form work, you'll need to set up an [EmailJS](https://www.emailjs.com/) account and provide the following environment variables in a `.env` file at the root of the project:
+
+```env
+VITE_EMAILJS_SERVICE_ID=your_service_id
+VITE_EMAILJS_TEMPLATE_ID=your_template_id
+VITE_EMAILJS_PUBLIC_KEY=your_public_key
+```
+
+## 👨‍💻 Author
+
+- **Mohamed Imran H** - [GitHub](https://github.com/imranpycode)
